@@ -18,6 +18,10 @@ SwissArmyLib
     :alt: Build status
     :target: https://ci.appveyor.com/project/Phault/swissarmylib/branch/master
 
+.. image:: https://readthedocs.org/projects/swissarmylib-docs/badge/?version=latest
+    :alt: Documentation Status
+    :target: http://swissarmylib-docs.readthedocs.io/en/latest/?badge=latest
+
 .. image:: https://api.bintray.com/packages/phault/SwissArmyLib/development/images/download.svg
     :alt: Download
     :target: https://bintray.com/phault/SwissArmyLib/development/_latestVersion#files
