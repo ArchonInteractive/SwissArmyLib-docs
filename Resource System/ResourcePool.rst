@@ -3,35 +3,38 @@ ResourcePool
 
 .. highlight:: csharp
 
+.. todo::
+    Write about ResourcePool
+
 .. ![ResourcePool](../images/resourcepool.png)
 
-Usage
------
+.. Usage
+.. -----
 
-Adding resource (eg. healing)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. Adding resource (eg. healing)
+.. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Removing resource (eg. damaging)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. Removing resource (eg. damaging)
+.. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Making it stay empty (eg. dead until revived)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. Making it stay empty (eg. dead until revived)
+.. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Renew (eg. revive)
-~~~~~~~~~~~~~~~~~~
+.. Renew (eg. revive)
+.. ~~~~~~~~~~~~~~~~~~
 
-Events
-~~~~~~
+.. Events
+.. ~~~~~~
 
-.. 
-    * OnPreChange
-    * OnChange
-    * OnEmpty
-    * OnFull
-    * OnRenew
+.. .. 
+..     * OnPreChange
+..     * OnChange
+..     * OnEmpty
+..     * OnFull
+..     * OnRenew
 
-Examples
---------
+.. Examples
+.. --------
 
-Friendly-fire protection
-~~~~~~~~~~~~~~~~~~~~~~~~
+.. Friendly-fire protection
+.. ~~~~~~~~~~~~~~~~~~~~~~~~
