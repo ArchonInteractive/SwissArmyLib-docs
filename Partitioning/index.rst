@@ -9,9 +9,16 @@ Spatial Partitioning
     Bin2D
     Bin3D
 
-There's a collection of useful GC-friendly `Spatial Partitioning <http://gameprogrammingpatterns.com/spatial-partition.html>`_ system implementations available in SwissArmyLib.
+There's a bunch of useful `Spatial Partitioning <http://gameprogrammingpatterns.com/spatial-partition.html>`_ system implementations available in SwissArmyLib.
 
-* :doc:`Quadtree\<T\> <Quadtree>`
-* :doc:`Octree\<T\> <Octree>`
-* :doc:`Bin2D\<T\> <Bin2D>`
-* :doc:`Bin3D\<T\> <Bin3D>`
++---------------------------------+-------------------------------------------------------------------------------+
+| Class                           | Purpose                                                                       |
++=================================+===============================================================================+
+| :doc:`Quadtree\<T\> <Quadtree>` | A GC-friendly Quadtree implementation.                                        |
++---------------------------------+-------------------------------------------------------------------------------+
+| :doc:`Octree\<T\> <Octree>`     | A GC-friendly Octree implementation.                                          |
++---------------------------------+-------------------------------------------------------------------------------+
+| :doc:`Bin2D\<T\> <Bin2D>`       | A simple GC-friendly two-dimensional Bin (aka Spatial Grid) implementation.   |
++---------------------------------+-------------------------------------------------------------------------------+
+| :doc:`Bin3D\<T\> <Bin3D>`       | A simple GC-friendly three-dimensional Bin (aka Spatial Grid) implementation. |
++---------------------------------+-------------------------------------------------------------------------------+
