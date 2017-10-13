@@ -10,6 +10,7 @@ Usage
 Creation
 ~~~~~~~~
 ::
+
     // creates a 100x100 grid
     Grid2D<float> myGrid = new Grid2D<float>(100, 100);
 
@@ -20,6 +21,7 @@ You can also define what value cells should have by default::
 Changing a cell
 ~~~~~~~~~~~~~~~
 ::
+
     myGrid[3, 10] = 128f;
 
     // or
@@ -31,6 +33,7 @@ Fill
 You can fill everything within a rectangle with *Fill()*.
 
 ::
+
     int minX = 30, minY = 40;
     int maxX = 50, maxY = 60;
     myGrid.Fill(128f, minX, minY, maxX, maxY);
@@ -40,6 +43,7 @@ Clear
 You can clear the whole grid with a specific value by using *Clear()*.
 
 ::
+
     // sets every cell to the default value
     myGrid.Clear();
 

@@ -10,6 +10,7 @@ Usage
 Creation
 ~~~~~~~~
 ::
+
     // creates a 100x100x100 grid
     Grid3D<float> myGrid = new Grid3D<float>(100, 100, 100);
 
