@@ -34,7 +34,9 @@ Usage
 Interval Updates
 ~~~~~~~~~~~~~~~~
 In addition to the regular Unity update loops, ManagedUpdate also support an extra two: frame-based interval and time-based interval.
+
 These loops run at a configurable interval (see **ManagedUpdate.FrameInterval** and **ManagedUpdate.TimeInterval**).
+
 If you want to know the time difference since these updates were last invoked, you can call **ManagedUpdate.DeltaTime** or **ManagedUpdate.UnscaledDeltaTime**.
 
 Examples
