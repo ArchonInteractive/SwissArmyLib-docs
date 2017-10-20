@@ -7,7 +7,7 @@ An abstract subclass of **MonoBehaviour** that uses :doc:`ManagedUpdate` for upd
 
 Usage
 -----
-Just inherit your **MonoBehaviours** from **ManagedUpdateBehaviour** instead and implement one (or more) of the interfaces: **IUpdateable**, **ILateUpdateable** and **IFixedUpdateable**.
+Just inherit your **MonoBehaviours** from **ManagedUpdateBehaviour** instead and implement one (or more) of the interfaces: **IUpdateable**, **ILateUpdateable** and **IFixedUpdateable**, **IFrameIntervalUpdateable**, **ITimeIntervalUpdateable**.
 
 Instead of Unity's magic *Update()*, *LateUpdate()* and *FixedUpdate()* methods you should use the corresponding methods from the interfaces.
 
