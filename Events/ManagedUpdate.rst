@@ -13,8 +13,8 @@ Events that you can listen to:
 * ManagedUpdate.OnUpdate
 * ManagedUpdate.OnLateUpdate
 * ManagedUpdate.OnFixedUpdate
-* ManagedUpdate.OnFrameIntervalUpdate
-* ManagedUpdate.OnTimeIntervalUpdate
+
+You can also create custom update loops that for example runs once every second.
 
 Why?
 ----
@@ -28,16 +28,41 @@ Usage
 * ManagedUpdate.OnUpdate
 * ManagedUpdate.OnLateUpdate
 * ManagedUpdate.OnFixedUpdate
-* ManagedUpdate.OnFrameIntervalUpdate
-* ManagedUpdate.OnTimeIntervalUpdate
+  
+You can also use the method *AddListener(eventId, listener)* in ManagedUpdate but it's only required if you use custom update loops.
 
-Interval Updates
+Custom Update Loops
 ~~~~~~~~~~~~~~~~
-In addition to the regular Unity update loops, ManagedUpdate also support an extra two: frame-based interval and time-based interval.
+In addition to the regular Unity update loops, ManagedUpdate also supports custom ones that you can control when runs.
+You can create such a loop by creating an instance of a class that implements the **ICustomUpdateLoop** interface (though it's simpler if you just subclass **CustomUpdateLoopBase**).
+There's two simple implementations already available if you need them: **TimeIntervalUpdateLoop** and **FrameIntervalUpdateLoop**.
 
-These loops run at a configurable interval (see **ManagedUpdate.FrameInterval** and **ManagedUpdate.TimeInterval**).
+::
+
+    var updateLoop = new TimeIntervalUpdateLoop(eventId: 1000, interval: 1);
+
+Then add the instance to ManagedUpdate by calling *AddCustomUpdateLoop()*.
+
+::
+
+    ManagedUpdate.AddCustomUpdateLoop(updateLoop);
+
+Subscribing to a custom update loop requires using the *AddListener(eventId, listener)* in ManagedUpdate (or you could use the updateloop instance directly).
+
+::
+
+    Action listener = () => Debug.Log("Booyah!");
+    ManagedUpdate.AddListener(eventId: 1000, listener);
 
 If you want to know the time difference since these updates were last invoked, you can call **ManagedUpdate.DeltaTime** or **ManagedUpdate.UnscaledDeltaTime**.
+
+::
+
+    Action listener = () => 
+    {
+        Debug.LogFormat("It has been {0} seconds since the last update!", ManagedUpdate.DeltaTime);
+    };
+    ManagedUpdate.AddListener(eventId: 1000, listener);
 
 Examples
 --------
