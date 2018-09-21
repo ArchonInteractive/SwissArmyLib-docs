@@ -28,7 +28,7 @@ SwissArmyLib
 
 `Repository <https://github.com/ArchonInteractive/SwissArmyLib>`_
 •
-`API Reference <https://archoninteractive.com/swissarmylib/>`_
+`API Reference <https://casperlindschouw.com/swissarmylib/>`_
 
 ----
 
